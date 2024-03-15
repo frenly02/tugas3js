@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TUGAS MSIB 3</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS</title>
+  </head>
+  <body>
+    <form id="frm">
+      <table style="width: 60%; background-color: rgb(255, 0, 0); border: 1px solid; text-align: center; margin: auto">
+        <tr>
+          <th colspan="2">Form Input</th>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Nama</label>
+          </td>
+          <td>
+            <input type="text" name="nama" id="" placeholder="Masukan Nama Anda" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Pekerjaan</label>
+          </td>
+          <td>
+            <input type="text" name="pekerjaan" id="" placeholder="Masukan Pekerjaan" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Hobby</label>
+          </td>
+          <td>
+            <input type="text" name="hobby" id="" placeholder="Masukan Hobby" />
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <button type="button" onclick="dataPerson()">Submit</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+    <center id="hasil">
 
-<form id="myForm">
-    <label for="nama">NAMA:</label><br>
-    <input type="text" id="nama" name="nama"><br>
-    <label for="pekerjaan">PEKERJAAN:</label><br>
-    <input type="text" id="pekerjaan" name="pekerjaan"><br>
-    <label for="hobi">HOBI:</label><br>
-    <input type="text" id="hobi" name="hobi"><br><br>
-    <input type="button" value="Submit" onclick="submitForm()">
-</form>
+    </center>
 
-<div id="result"></div>
-
-<script>
-function submitForm() {
-    var nama = document.getElementById("nama").value;
-    var pekerjaan = document.getElementById("pekerjaan").value;
-    var hobi = document.getElementById("hobi").value;
-    
-    var result = "Nama: " + nama + "<br>" +
-                 "Pekerjaan: " + pekerjaan + "<br>" +
-                 "Hobi: " + hobi;
-    
-    document.getElementById("result").innerHTML = result;
-}
-</script>
-
-</body>
+    <script src="skrip.js"></script>
+  </body>
 </html>
