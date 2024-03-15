@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUGAS MSIB 3</title>
+</head>
+<body>
+
+<form id="myForm">
+    <label for="nama">NAMA:</label><br>
+    <input type="text" id="nama" name="nama"><br>
+    <label for="pekerjaan">PEKERJAAN:</label><br>
+    <input type="text" id="pekerjaan" name="pekerjaan"><br>
+    <label for="hobi">HOBI:</label><br>
+    <input type="text" id="hobi" name="hobi"><br><br>
+    <input type="button" value="Submit" onclick="submitForm()">
+</form>
+
+<div id="result"></div>
+
+<script>
+function submitForm() {
+    var nama = document.getElementById("nama").value;
+    var pekerjaan = document.getElementById("pekerjaan").value;
+    var hobi = document.getElementById("hobi").value;
+    
+    var result = "Nama: " + nama + "<br>" +
+                 "Pekerjaan: " + pekerjaan + "<br>" +
+                 "Hobi: " + hobi;
+    
+    document.getElementById("result").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
